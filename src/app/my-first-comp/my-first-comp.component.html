@@ -1,6 +1,6 @@
 <div class="form-container">
   <h2>Simple Form</h2>
-  <form (ngSubmit)="onSubmit()">
+  <form (ngSubmit)="onSubmit()" ngNativeValidate>
     <div class="form-group">
       <label for="name">Name</label>
       <input type="text" id="name" required [(ngModel)]="name" name="name" />
@@ -28,7 +28,7 @@
     <button type="submit">Submit</button>
   </form>
 
-  <!-- <table *ngIf="isSubmitted">
+  <!-- <table TextThat email is not v*ngIf="isSubmitted">
     <thead>
       <tr>
         <th>#</th>
@@ -46,7 +46,7 @@
       </tr>
     </tbody>
   </table> -->
-
+  TextThat email is not va
   <div class="flex-container" *ngIf="isSubmitted">
     <app-message-details
       *ngFor="let msg of messages; let i = index"

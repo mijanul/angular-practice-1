@@ -16,6 +16,7 @@ export class NewProductComponent {
   saveProduct() {
     this.service.createProduct(this.product).subscribe({
       next: (result) => {
+        console.log(result);
         this.router.navigate(['products']);
       },
     });

@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'home', component: MyFirstCompComponent },
   { path: 'about', component: AboutComponent },
   { path: 'products', component: ProductsComponent },
+  { path: 'products/:productId', component: ProductsComponent },
   { path: 'new-product', component: NewProductComponent },
 ];
 
